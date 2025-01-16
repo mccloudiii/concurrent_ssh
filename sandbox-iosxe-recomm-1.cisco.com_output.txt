@@ -1,0 +1,673 @@
+Command: term len 0
+Output:
+
+Welcome to the DevNet Sandbox for Cat8000V and IOS XE
+
+The following programmability features are already enabled:
+
+-NETCONF
+-RESTCONF
+
+Thanks for stopping by.
+
+
+Cat8000V#term len 0
+Cat8000V#
+
+--------------------------------------------------
+
+Command: show version
+Output:
+show version
+Cisco IOS XE Software, Version 17.12.02
+Cisco IOS Software [Dublin], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 17.12.2, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2023 by Cisco Systems, Inc.
+Compiled Tue 14-Nov-23 05:59 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2023 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+Cat8000V uptime is 19 hours, 0 minutes
+Uptime for this control processor is 19 hours, 2 minutes
+System returned to ROM by reload
+System image file is "bootflash:packages.conf"
+Last reload reason: Reload Command
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+License Level: 
+License Type: Perpetual
+Next reload license Level: 
+
+Addon License Level: 
+Addon License Type: Subscription
+Next reload addon license Level: 
+
+The current throughput level is 20000 kbps 
+
+
+Smart Licensing Status: Smart Licensing Using Policy
+
+cisco C8000V (VXE) processor (revision VXE) with 2030646K/3075K bytes of memory.
+Processor board ID 9OBXJHNNU5V
+Router operating mode: Autonomous
+1 Virtual Ethernet interface
+3 Gigabit Ethernet interfaces
+32768K bytes of non-volatile configuration memory.
+3960412K bytes of physical memory.
+5234688K bytes of virtual hard disk at bootflash:.
+
+Configuration register is 0x2102
+
+Cat8000V#
+
+--------------------------------------------------
+
+Command: show ip interface brief
+Output:
+show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      
+GigabitEthernet2       unassigned      YES NVRAM  up                    up      
+GigabitEthernet3       unassigned      YES NVRAM  administratively down down    
+Loopback0              10.8.8.8        YES NVRAM  up                    up      
+Loopback1              10.10.10.1      YES NVRAM  up                    up      
+Loopback2              10.2.2.2        YES manual up                    up      
+Loopback3              10.10.10.3      YES NVRAM  up                    up      
+Loopback4              10.111.4.1      YES manual up                    up      
+Loopback5              10.10.10.5      YES NVRAM  up                    up      
+Loopback6              10.10.10.6      YES NVRAM  up                    up      
+Loopback7              10.10.10.7      YES NVRAM  up                    up      
+Loopback8              10.10.10.8      YES NVRAM  up                    up      
+Loopback9              10.10.10.9      YES NVRAM  up                    up      
+Loopback11             10.10.10.11     YES NVRAM  up                    up      
+Loopback12             10.10.10.12     YES NVRAM  up                    up      
+Loopback13             10.10.10.13     YES NVRAM  up                    up      
+Loopback14             10.10.10.14     YES NVRAM  up                    up      
+Loopback15             10.10.10.15     YES NVRAM  up                    up      
+Loopback16             10.10.10.16     YES NVRAM  up                    up      
+Loopback17             10.10.10.17     YES NVRAM  up                    up      
+Loopback18             10.10.10.18     YES NVRAM  up                    up      
+Loopback19             10.10.10.19     YES NVRAM  up                    up      
+Loopback20             10.10.10.20     YES NVRAM  up                    up      
+Loopback21             10.10.10.21     YES NVRAM  up                    up      
+Loopback22             10.10.10.22     YES NVRAM  up                    up      
+Loopback23             10.10.10.23     YES NVRAM  up                    up      
+Loopback24             10.10.10.24     YES NVRAM  up                    up      
+Loopback26             10.10.10.26     YES NVRAM  up                    up      
+Loopback27             10.10.10.27     YES NVRAM  up                    up      
+Loopback28             10.10.10.28     YES NVRAM  up                    up      
+Loopback29             10.10.10.29     YES NVRAM  up                    up      
+Loopback30             10.10.10.30     YES NVRAM  up                    up      
+Loopback31             10.10.10.31     YES NVRAM  up                    up      
+Loopback32             10.10.10.32     YES NVRAM  up                    up      
+Loopback33             10.10.10.33     YES NVRAM  up                    up      
+Loopback34             10.10.10.34     YES NVRAM  up                    up      
+Loopback35             10.10.10.35     YES NVRAM  up                    up      
+Loopback36             10.10.10.36     YES NVRAM  up                    up      
+Loopback37             10.10.10.37     YES NVRAM  up                    up      
+Loopback38             10.10.10.38     YES NVRAM  up                    up      
+Loopback39             10.10.10.39     YES NVRAM  up                    up      
+Loopback40             10.10.10.40     YES NVRAM  up                    up      
+Loopback41             10.10.10.41     YES NVRAM  up                    up      
+Loopback42             10.10.10.42     YES NVRAM  up                    up      
+Loopback43             10.10.10.43     YES NVRAM  up                    up      
+Loopback44             10.10.10.44     YES NVRAM  up                    up      
+Loopback45             10.10.10.45     YES NVRAM  up                    up      
+Loopback46             10.10.10.46     YES NVRAM  up                    up      
+Loopback47             10.10.10.47     YES NVRAM  up                    up      
+Loopback48             10.10.10.48     YES NVRAM  up                    up      
+Loopback49             10.10.10.49     YES NVRAM  up                    up      
+Loopback50             10.10.10.50     YES NVRAM  up                    up      
+Loopback100            10.10.100.1     YES NVRAM  up                    up      
+Loopback101            10.1.0.101      YES NVRAM  up                    up      
+Loopback112            10.112.0.2      YES manual up                    up      
+Loopback200            10.10.101.1     YES NVRAM  up                    up      
+Loopback201            unassigned      YES unset  up                    up      
+Loopback202            unassigned      YES unset  up                    up      
+Loopback203            unassigned      YES unset  up                    up      
+Loopback411            unassigned      YES unset  up                    up      
+Loopback412            unassigned      YES unset  up                    up      
+Loopback413            unassigned      YES unset  up                    up      
+Loopback414            unassigned      YES unset  up                    up      
+Loopback1111           10.10.11.11     YES manual up                    up      
+Port-channel1          unassigned      YES unset  down                  down    
+VirtualPortGroup0      192.168.1.1     YES NVRAM  up                    up      
+Vlan25                 192.168.25.1    YES manual down                  down    
+Cat8000V#
+
+--------------------------------------------------
+
+Command: show running-config
+Output:
+show running-config
+Building configuration...
+
+Current configuration : 12840 bytes
+!
+! Last configuration change at 04:48:19 UTC Thu Jan 16 2025 by admin
+!
+version 17.12
+service timestamps debug datetime msec
+service timestamps log datetime localtime
+service call-home
+platform qfp utilization monitor load 80
+platform punt-keepalive disable-kernel-core
+platform sslvpn use-pd
+platform console virtual
+!
+hostname Cat8000V
+!
+boot-start-marker
+boot system bootflash:packages.conf
+boot-end-marker
+!
+!
+vrf definition blue
+ description Blue VRF
+ rd 1:410
+!
+vrf definition green
+ description Green VRF
+ rd 1:420
+!
+vrf definition red
+ description Red VRF
+ rd 1:400
+!
+vrf definition yellow
+ description Yellow VRF
+ rd 1:4
+!
+logging userinfo
+no logging console
+aaa new-model
+!
+!
+aaa authentication login default local
+aaa authorization exec default local 
+!
+!
+aaa session-id common
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name test.com
+!
+!
+!
+login block-for 900 attempts 3 within 120
+login on-failure log
+login on-success log
+!
+!
+subscriber templating
+vtp version 1
+multilink bundle-name authenticated
+!
+pae
+!
+!
+crypto pki trustpoint TP-self-signed-3209586145
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-3209586145
+ revocation-check none
+ rsakeypair TP-self-signed-3209586145
+ hash sha256
+!
+crypto pki trustpoint SLA-TrustPoint
+ enrollment pkcs12
+ revocation-check crl
+ hash sha256
+!
+!
+crypto pki certificate chain TP-self-signed-3209586145
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 33323039 35383631 3435301E 170D3233 30323237 30353137 
+  31325A17 0D333330 32323630 35313731 325A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 32303935 
+  38363134 35308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 0100DA9D D10B2672 974416C2 BC4F4132 DF8DD724 13BE2BBA 3A40F21C 
+  DA8F647F B7379A91 B23A9F25 8C617395 7B2180E6 1FB61195 1E8535E0 578CD897 
+  11064E3D 40245DC7 955D0F73 29A72D39 7B50A9E5 6997F18F 9A7671D8 96570923 
+  A4E5D707 623C1774 AD82B10D 73FA170E 4446E280 0012BDB9 F99BC0E4 20BBA9A3 
+  8479A67D 5C6D358D D90F34E0 E29BA5E8 07040A4B 9F3D7D29 5595C364 DAE77930 
+  8885165F E6C35D15 5EF140F7 B22D01FF 95A19026 EDDA92F3 7325B5C7 E3F814B0 
+  7979AB73 D180D8AF CC2BAB70 27145DC4 589EE4B6 4AB09F58 C284E219 75E27BB8 
+  5FC33333 26226C02 2A94B628 3F82A41C F5181EA6 F59784E5 45194C3B 8D3B6E9C 
+  79CC8359 8B910203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 
+  301F0603 551D2304 18301680 14ADE170 B53AA3EC 4C9154DE 1A4CE02B 2E83E88D 
+  D9301D06 03551D0E 04160414 ADE170B5 3AA3EC4C 9154DE1A 4CE02B2E 83E88DD9 
+  300D0609 2A864886 F70D0101 05050003 82010100 1BBBC609 17446925 5F13E8F0 
+  85428490 B6E9B9FE 8426798C 7B3699FA C66709D3 E560DD18 0EB98574 506E99F6 
+  E03C0CBC 1D118C1D D0A3E143 1F9D3473 59985621 FE22D26C 066F0824 FADAC2C4 
+  A43B9A68 2CD88E7B B5A76205 1CB38F6A 85A3FAE9 661D1AFA E2E97243 A020E04F 
+  070DE776 70F7271F 9ABD35C8 D00F8432 B3E4A924 7D65B2CB 6FB273F8 F0AE783A 
+  DE8C6523 509AAA89 E960A434 AE2FBABA F4B6EAC5 99DA4EE1 BBB40C62 58CA607B 
+  8D8FB003 AB9646AE 55934BA9 5583B917 07B4A7F2 8836033E 8C6EA1D5 98CA6662 
+  D49AB861 F4AF392C 4D91C4E5 56B822A6 1025DA50 FBC03BBA 3EDFEEC6 FB47C9BC 
+  7F5C09B8 462B2A98 BE23844F 7C95D631 E1A0D30C
+  	quit
+crypto pki certificate chain SLA-TrustPoint
+ certificate ca 01
+  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030 
+  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363 
+  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934 
+  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305 
+  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720 
+  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 
+  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D 
+  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520 
+  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE 
+  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC 
+  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188 
+  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7 
+  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191 
+  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44 
+  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201 
+  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85 
+  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500 
+  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905 
+  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B 
+  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8 
+  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C 
+  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B 
+  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678 
+  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB 
+  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0 
+  D697DF7F 28
+  	quit
+!
+!
+license udi pid C8000V sn 9OBXJHNNU5V
+archive
+ log config
+  logging enable
+memory free low-watermark processor 63709
+diagnostic bootup level minimal
+!
+!
+!
+enable secret 9 $9$f.h77Nbz1Ld8Xk$BFuDrBWpMnJJouN7Us0HF6IByMu0P0nKwcH2Dy6GhyY
+!
+username admin privilege 15 secret 9 $9$lgJxy7Ga.Th5FU$gocFhcHC/8pvixGr.s2wB7X59FiGVvwYawfCPrmaJuY
+username ansible privilege 15
+username ansible_admin privilege 15 secret 9 $14$pass$zAic9rt/2LghEE$B3DIMELmZO.d/r5Y2u0Ce4LITyWxi9O1ieRfYXhVdk2
+!
+redundancy
+!
+!
+!
+lldp run
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.8.8.8 255.255.255.240
+!
+interface Loopback1
+ ip address 10.10.10.1 255.255.255.255
+!
+interface Loopback2
+ ip address 10.2.2.2 255.255.255.0
+!
+interface Loopback3
+ ip address 10.10.10.3 255.255.255.255
+!
+interface Loopback4
+ description NC loopback interface
+ ip address 10.111.4.2 255.255.255.255 secondary
+ ip address 10.111.4.1 255.255.255.255
+!
+interface Loopback5
+ ip address 10.10.10.5 255.255.255.255
+!
+interface Loopback6
+ ip address 10.10.10.6 255.255.255.255
+!
+interface Loopback7
+ ip address 10.10.10.7 255.255.255.255
+!
+interface Loopback8
+ ip address 10.10.10.8 255.255.255.255
+!
+interface Loopback9
+ ip address 10.10.10.9 255.255.255.255
+!
+interface Loopback11
+ ip address 10.10.10.11 255.255.255.255
+!
+interface Loopback12
+ ip address 10.10.10.12 255.255.255.255
+!
+interface Loopback13
+ ip address 10.10.10.13 255.255.255.255
+!
+interface Loopback14
+ ip address 10.10.10.14 255.255.255.255
+!
+interface Loopback15
+ ip address 10.10.10.15 255.255.255.255
+!
+interface Loopback16
+ ip address 10.10.10.16 255.255.255.255
+!
+interface Loopback17
+ ip address 10.10.10.17 255.255.255.255
+!
+interface Loopback18
+ ip address 10.10.10.18 255.255.255.255
+!
+interface Loopback19
+ ip address 10.10.10.19 255.255.255.255
+!
+interface Loopback20
+ ip address 10.10.10.20 255.255.255.255
+!
+interface Loopback21
+ ip address 10.10.10.21 255.255.255.255
+!
+interface Loopback22
+ ip address 10.10.10.22 255.255.255.255
+!
+interface Loopback23
+ ip address 10.10.10.23 255.255.255.255
+!
+interface Loopback24
+ ip address 10.10.10.24 255.255.255.255
+!
+interface Loopback26
+ ip address 10.10.10.26 255.255.255.255
+!
+interface Loopback27
+ ip address 10.10.10.27 255.255.255.255
+!
+interface Loopback28
+ ip address 10.10.10.28 255.255.255.255
+!
+interface Loopback29
+ ip address 10.10.10.29 255.255.255.255
+!
+interface Loopback30
+ ip address 10.10.10.30 255.255.255.255
+!
+interface Loopback31
+ ip address 10.10.10.31 255.255.255.255
+!
+interface Loopback32
+ ip address 10.10.10.32 255.255.255.255
+!
+interface Loopback33
+ ip address 10.10.10.33 255.255.255.255
+!
+interface Loopback34
+ ip address 10.10.10.34 255.255.255.255
+!
+interface Loopback35
+ ip address 10.10.10.35 255.255.255.255
+!
+interface Loopback36
+ ip address 10.10.10.36 255.255.255.255
+!
+interface Loopback37
+ ip address 10.10.10.37 255.255.255.255
+!
+interface Loopback38
+ ip address 10.10.10.38 255.255.255.255
+!
+interface Loopback39
+ ip address 10.10.10.39 255.255.255.255
+!
+interface Loopback40
+ ip address 10.10.10.40 255.255.255.255
+!
+interface Loopback41
+ ip address 10.10.10.41 255.255.255.255
+!
+interface Loopback42
+ ip address 10.10.10.42 255.255.255.255
+!
+interface Loopback43
+ ip address 10.10.10.43 255.255.255.255
+!
+interface Loopback44
+ ip address 10.10.10.44 255.255.255.255
+!
+interface Loopback45
+ ip address 10.10.10.45 255.255.255.255
+!
+interface Loopback46
+ ip address 10.10.10.46 255.255.255.255
+!
+interface Loopback47
+ ip address 10.10.10.47 255.255.255.255
+!
+interface Loopback48
+ ip address 10.10.10.48 255.255.255.255
+!
+interface Loopback49
+ ip address 10.10.10.49 255.255.255.255
+!
+interface Loopback50
+ ip address 10.10.10.50 255.255.255.255
+!
+interface Loopback100
+ description CONFIGURED BY ANSIBLE
+ ip address 10.10.100.1 255.255.255.0
+!
+interface Loopback101
+ ip address 10.1.0.101 255.255.255.0
+!
+interface Loopback112
+ ip address 10.112.0.2 255.255.255.0
+!
+interface Loopback200
+ description CONFIGURED BY ANSIBLE
+ ip address 10.10.101.1 255.255.255.0
+!
+interface Loopback201
+ no ip address
+ ip ospf 10 area 0
+!
+interface Loopback202
+ no ip address
+ ip ospf 10 area 0
+!
+interface Loopback203
+ no ip address
+ ip ospf 10 area 0
+!
+interface Loopback411
+ description Ansible interface 411
+ vrf forwarding red
+ no ip address
+!
+interface Loopback412
+ description Ansible interface 412
+ vrf forwarding blue
+ no ip address
+!
+interface Loopback413
+ description Ansible interface 413
+ vrf forwarding green
+ no ip address
+!
+interface Loopback414
+ description Ansible interface 414
+ vrf forwarding yellow
+ no ip address
+!
+interface Loopback1111
+ description Loopback interface 1111 created with Ansible by Wanis
+ ip address 10.10.11.11 255.255.255.255
+!
+interface Port-channel1
+ no ip address
+ no negotiation auto
+!
+interface VirtualPortGroup0
+ ip address 192.168.1.1 255.255.255.0
+ ip nat inside
+!
+interface GigabitEthernet1
+ description MANAGEMENT INTERFACE - DON'T TOUCH ME
+ ip address 10.10.20.48 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet2
+ no ip address
+ ip ospf 20 area 0
+ negotiation auto
+!
+interface GigabitEthernet3
+ description Network Interface
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface Vlan25
+ description Created via CR CHG0030101
+ ip address 192.168.25.1 255.255.255.0
+!
+router ospf 20
+!
+router ospf 19
+ router-id 33.44.89.22
+ network 192.168.10.0 0.0.0.0 area 0
+ network 192.168.11.0 0.0.0.0 area 0
+!
+router ospf 30
+!
+router ospf 10
+ router-id 10.10.10.10
+ network 172.16.10.0 0.0.0.255 area 0
+!
+iox
+ip forward-protocol nd
+!
+ip http server
+ip http authentication local
+ip http secure-server
+ip http max-connections 2
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet1 10.10.20.254
+ip nat inside source list NAT-ACL interface GigabitEthernet1 overload
+ip ssh bulk-mode 131072
+ip ssh rsa keypair-name ssh-key
+ip ssh pubkey-chain
+  username admin
+   key-hash ssh-rsa CE77DBD3B334D194B06D3BF44DCB1A5D AAAAB3NzaC1yc2EAAAADAQABAAABAQCAQYaytIuFnAJt4FYKJxLlwNfvNrrbZUJjqX9N30CdccMtX+qCTyrJ8oIdK7NZnmBxeIWLpV1G8F2Jx4isnTibLpTuKKPmIYsga3AJ5w3fjYN6N+NmoEOAJ2ALVl3TZVSDiuuKq206TMiWsdEasOkBpSLQSK9Ez2JJnjlXrASImy
+  username ansible
+   key-hash ssh-rsa EFF97F447E6A7267A77ACCFB96FB777E mhm@linux
+ip scp server enable
+!
+!
+ip prefix-list 1 seq 5 permit 1.1.1.1/32
+!
+ip access-list extended IPv4-ACL
+ 10 deny tcp any 198.51.100.0 0.0.0.255
+ 20 permit tcp any any
+ip access-list extended NAT-ACL
+ 10 permit ip 192.168.1.0 0.0.0.255 any
+ip access-list extended Test
+ 10 permit ip any host 1.1.1.1
+ip access-list extended 101
+ 10 permit ip any 192.168.2.0 0.0.0.255
+!
+route-map bgp-1 permit 1 
+ set as-path prepend 139 139 139 139 139
+!
+snmp-server community Durham RW
+snmp-server community ChapelHill RW
+snmp-server location Virtual
+tftp-server bootflash:tet
+tftp-server bootflash:C1sco12345
+tftp-server bootflash:c8000v-mono-universalk9.17.12.02.SPA.pkg
+!
+!
+!
+!
+control-plane
+!
+banner motd ^C
+Welcome to the DevNet Sandbox for Cat8000V and IOS XE
+
+The following programmability features are already enabled:
+
+-NETCONF
+-RESTCONF
+
+Thanks for stopping by.
+^C
+!
+line con 0
+ exec-timeout 0 0
+ stopbits 1
+line aux 0
+line vty 0 4
+ exec-timeout 0 0
+ session-limit 2
+ length 0
+ transport input ssh
+!
+call-home
+ ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com
+ ! the email address configured in Cisco Smart License Portal will be used as contact email address to send SCH notifications.
+ contact-email-addr sch-smart-licensing@cisco.com
+ profile "CiscoTAC-1"
+  active
+  destination transport-method http
+!
+!
+!
+!
+!
+!
+app-hosting appid guestshell
+netconf-yang
+restconf
+end
+
+Cat8000V#
+
+--------------------------------------------------
+
